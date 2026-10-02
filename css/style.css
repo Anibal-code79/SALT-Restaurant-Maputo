@@ -1,0 +1,29 @@
+html {scroll-behavior: smooth;}
+body {font-family: Arial, Helvetica, sans-serif;color: #222;}
+
+.navbar {background-color: rgba(0, 0, 0, 0.85);backdrop-filter: blur(8px);}
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: white !important;}
+
+.nav-link {color: white !important;margin-left: 15px;}
+.nav-link:hover {color: #d6b36a !important;}
+
+.btn-salt {background-color: #c9a45c;color: white;border: none;padding: 12px 24px;font-weight: bold;}
+.btn-salt:hover {background-color: #a88649;color: white;}
+
+.hero {
+    min-height: 100vh;
+    background:linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1800&q=85");
+    background-size: cover;
+    background-position: center;
+    color: white;}
+
+.hero h1 {font-size: 4rem;font-weight: 700;max-width: 750px;}
+.hero h1 span {color: #d6b36a;}
+.hero p {font-size: 1.2rem;max-width: 600px;color: #eee;}
+.hero-subtitle,
+.section-subtitle {color: #c9a45c;font-weight: bold;letter-spacing: 3px;}
