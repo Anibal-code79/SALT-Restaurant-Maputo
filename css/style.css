@@ -1,19 +1,37 @@
 html {scroll-behavior: smooth;}
-body {font-family: Arial, Helvetica, sans-serif;color: #222;}
-
-.navbar {background-color: rgba(0, 0, 0, 0.85);backdrop-filter: blur(8px);}
-.logo {
+body {font-family: Arial, Helvetica, sans-serif;color: var(--salt-black);}
+:root {
+    --salt-black: #111111;
+    --salt-dark: #181818;
+    --salt-white: #ffffff;
+    --salt-gold: #c9a45c;
+    --salt-gold-light: #dfc17d;
+    --salt-gray: #777777;}
+.salt-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 5px;
-    color: white !important;}
+    color: var(--salt-white) !important;
+    text-decoration: none;}
 
+.salt-icon {display: flex;align-items: center;justify-content: center;width: 38px;height: 38px;border: 2px solid var(--salt-gold);color: var(--salt-gold);font-size: 20px;letter-spacing: 0;transform: rotate(45deg);}
+.salt-icon {line-height: 1;}
+.salt-icon::first-letter {transform: rotate(-45deg);}
+.salt-logo:hover {color: var(--salt-gold) !important;}
+.salt-logo:hover .salt-icon {border-color: var(--salt-gold-light);color: var(--salt-gold-light);}
+.footer-logo {margin-bottom: 10px;}
+.navbar {background-color: rgba(17, 17, 17, 0.95);backdrop-filter: blur(10px);}
+.logo {font-size: 28px;font-weight: bold;letter-spacing: 5px;color: white !important;}
+.salt-icon {display: flex;align-items: center;justify-content: center;width: 38px;height: 38px;border: 2px solid var(--salt-gold);transform: rotate(45deg);}
+.salt-icon span {transform: rotate(-45deg);color: var(--salt-gold);font-size: 20px;font-weight: bold;}
 .nav-link {color: white !important;margin-left: 15px;}
 .nav-link:hover {color: #d6b36a !important;}
 
-.btn-salt {background-color: #c9a45c;color: white;border: none;padding: 12px 24px;font-weight: bold;}
-.btn-salt:hover {background-color: #a88649;color: white;}
-
+.btn-salt {background-color: var(--salt-gold);color: var(--salt-white);border: 1px solid var(--salt-gold);padding: 12px 24px;font-weight: 600;transition: 0.3s;}
+.btn-salt:hover {background-color: transparent;color: var(--salt-gold);border-color: var(--salt-gold);}
 .hero {
     min-height: 100vh;
     background:linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
@@ -23,11 +41,11 @@ body {font-family: Arial, Helvetica, sans-serif;color: #222;}
     color: white;}
 
 .hero h1 {font-size: 4rem;font-weight: 700;max-width: 750px;}
-.hero h1 span {color: #d6b36a;}
+.hero h1 span {color: var(--salt-gold);}
 .hero p {font-size: 1.2rem;max-width: 600px;color: #eee;}
 .hero-subtitle,
 .section-subtitle {color: #c9a45c;font-weight: bold;letter-spacing: 3px;}
-
+.hero-subtitle {display: inline-block;margin-bottom: 15px;color: var(--salt-gold);font-size: 14px;font-weight: 600;letter-spacing: 4px;}
 #sobre h2,
 .menu-section h2,
 .contact-section h2 {
