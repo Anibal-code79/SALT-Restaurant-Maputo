@@ -12,25 +12,30 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top salt-navbar">
         <div class="container">
-
-            <a class="navbar-brand salt-logo" href="#inicio"><span class="salt-icon"><span>S</span></span><span>SALT</span></a>
-            <!-- BOTÃO MOBILE -->
-            <button class="navbar-toggler" type="button"data-bs-toggle="collapse"data-bs-target="#menuPrincipal"><span class="navbar-toggler-icon"></span></button>
-
-            <div class="collapse navbar-collapse" id="menuPrincipal">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                </ul>
-                <a href="#contacto" class="btn btn-salt ms-lg-3">Reservar mesa</a>
+        <a class="navbar-brand salt-logo" href="#inicio" aria-label="SALT - Página inicial">
+            <span class="salt-icon"><span>S</span></span>
+            <span class="salt-word">SALT</span>
+        </a>
+        <button class="navbar-toggler" type="button"data-bs-toggle="collapse"data-bs-target="#menuPrincipal"aria-controls="menuPrincipal"aria-expanded="false"aria-label="Abrir ou fechar menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+            <!-- BOTÃO DE RESERVA -->
+            <div class="navbar-action"></div><a href="#contacto" class="btn btn-salt navbar-reserve">
+                    <i class="bi bi-calendar-check me-2"></i>Reservar mesa</a>
             </div>
         </div>
+        </div>
     </nav>
-
 
     <header id="inicio" class="hero">
         <div class="container">
