@@ -191,15 +191,229 @@ body {font-family: Arial, Helvetica, sans-serif;color: var(--salt-black);}
 .hero-subtitle,
 .section-subtitle {color: #c9a45c;font-weight: bold;letter-spacing: 3px;}
 .hero-subtitle {display: inline-block;margin-bottom: 15px;color: var(--salt-gold);font-size: 14px;font-weight: 600;letter-spacing: 4px;}
-#sobre h2,
-.menu-section h2,
-.contact-section h2 {
-    font-size: 2.8rem;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 20px;
+
+/*   SECÇÃO SOBRE - SALT */
+.about-section {
+    padding: 110px 0;
+    background-color: #fff;
+    overflow: hidden;
 }
-#sobre p {line-height: 1.8;color: #555;}
+
+/* IMAGEM PRINCIPAL */
+.about-visual {
+    position: relative;
+    min-height: 540px;
+    margin-right: 15px;
+}
+
+.about-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 3px;
+}
+
+.about-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.03) 45%,
+        rgba(0, 0, 0, 0.58) 100%
+    );
+}
+
+/* SELO DECORATIVO */
+.about-stamp {
+    position: absolute;
+    top: 30px;
+    right: -22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    width: 115px;
+    height: 115px;
+    background-color: var(--salt-gold);
+    color: #fff;
+    border: 5px solid #fff;
+    outline: 1px solid var(--salt-gold);
+    border-radius: 50%;
+    transform: rotate(8deg);
+}
+
+.stamp-top {
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.stamp-line {
+    width: 35px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.stamp-bottom {
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+/* LEGENDA DA IMAGEM */
+.about-image-caption {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.about-image-caption i {
+    color: var(--salt-gold-light);
+    font-size: 17px;
+}
+
+/* CONTEÚDO */
+.about-content {
+    padding: 15px 0 15px 20px;
+}
+
+.about-content .section-subtitle {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.about-label-line {
+    width: 30px;
+    height: 2px;
+    background-color: var(--salt-gold);
+}
+
+/* TÍTULO EDITORIAL */
+.about-title {
+    margin: 24px 0;
+    color: var(--salt-black);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.3rem, 4vw, 3.5rem);
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: -1px;
+}
+
+.about-title span {
+    display: block;
+    color: #a88649;
+    font-style: italic;
+}
+
+/* TEXTOS */
+.about-intro {
+    margin-bottom: 18px;
+    color: #292929;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.about-description {
+    margin-bottom: 15px;
+    color: #707070;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* VALORES */
+.about-values {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 19px;
+    margin: 30px 0;
+    padding: 25px 0;
+    border-top: 1px solid #e9e5dc;
+    border-bottom: 1px solid #e9e5dc;
+}
+
+.about-value {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.about-value > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 42px;
+    width: 42px;
+    height: 42px;
+    color: #a88649;
+    background-color: #f7f3e9;
+    font-size: 19px;
+}
+
+.about-value h3 {
+    margin: 0 0 5px;
+    color: var(--salt-black);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.about-value p {
+    margin: 0;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* BOTÃO */
+.about-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 13px 23px;
+    border-radius: 3px;
+}
+
+  /* RESPONSIVIDADE */
+@media (max-width: 991.98px) {
+    .about-section { padding: 80px 0;}
+    .about-visual {
+        min-height: 450px;
+        margin-right: 10px;
+        margin-left: 0;
+    }
+    .about-content { padding: 10px 0 0; }
+    .about-title { max-width: 650px;    }
+}
+@media (max-width: 575.98px) {
+    .about-section { padding: 60px 0;}
+    .about-visual {  min-height: 360px;margin-right: 12px;}
+
+    .about-stamp {
+        top: 20px;
+        right: -12px;
+        width: 90px;
+        height: 90px;
+        border-width: 4px;
+    }
+    .stamp-top {font-size: 19px;}
+    .stamp-bottom {font-size: 7px;}
+    .about-image-caption { left: 16px; bottom: 18px;   font-size: 12px;}
+    .about-title {  font-size: 2.35rem;}
+    .about-intro { font-size: 16px;}
+    .about-values {margin: 24px 0; padding: 22px 0;}
+    .about-button { width: 100%; justify-content: center;   }
+}
 
 .menu-section {background-color: #f5f3ef;}
 
@@ -233,3 +447,4 @@ body {font-family: Arial, Helvetica, sans-serif;color: var(--salt-black);}
     .contact-section h2 {
         font-size: 2.2rem;}
 }
+
