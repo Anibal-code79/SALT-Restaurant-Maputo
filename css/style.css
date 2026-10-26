@@ -546,6 +546,133 @@ body {font-family: Arial, Helvetica, sans-serif;color: var(--salt-black);}
     }
 }
 
+/* ========================================
+   LOCALIZAÇÃO DO SALT
+======================================== */
+
+.about-location {
+    padding: 100px 0;
+    background-color: #f8f7f3;
+}
+
+.location-title {
+    margin: 25px 0 20px;
+    color: var(--salt-black);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.4rem, 4vw, 3.5rem);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.location-title span {
+    display: block;
+    color: #a88649;
+    font-style: italic;
+}
+
+.location-description {
+    margin-bottom: 30px;
+    color: #747474;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.location-address {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 30px;
+    padding: 22px 0;
+    border-top: 1px solid #e3ded3;
+    border-bottom: 1px solid #e3ded3;
+}
+
+.location-icon {
+    display: flex;
+    flex: 0 0 45px;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    color: #a88649;
+    background-color: #eee8da;
+    font-size: 21px;
+}
+
+.location-address h3 {
+    margin: 0 0 10px;
+    color: var(--salt-black);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.location-address p {
+    margin: 0;
+    color: #747474;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.location-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 20px;
+    border-radius: 2px;
+}
+
+.location-map {
+    overflow: hidden;
+    min-height: 450px;
+    background-color: #e9e5dc;
+    border: 1px solid #e3ded3;
+}
+
+.location-map iframe {
+    display: block;
+    width: 100%;
+    min-height: 450px;
+}
+
+.location-map-caption {
+    margin: 14px 0 0;
+    color: #777;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* Responsividade */
+
+@media (max-width: 991.98px) {
+    .about-location {
+        padding: 75px 0;
+    }
+
+    .location-map,
+    .location-map iframe {
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .about-location {
+        padding: 60px 0;
+    }
+
+    .location-title {
+        font-size: 2.4rem;
+    }
+
+    .location-button {
+        width: 100%;
+    }
+
+    .location-map,
+    .location-map iframe {
+        min-height: 350px;
+    }
+}
+
 .menu-section {background-color: #f5f3ef;}
 
 .dish-card {
