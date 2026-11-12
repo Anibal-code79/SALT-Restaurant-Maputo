@@ -547,8 +547,7 @@ body {font-family: Arial, Helvetica, sans-serif;color: var(--salt-black);}
 }
 
 /* ========================================
-   LOCALIZAÇÃO DO SALT
-======================================== */
+   LOCALIZAÇÃO DO SALT */
 
 .about-location {
     padding: 100px 0;
@@ -814,3 +813,464 @@ body {font-family: Arial, Helvetica, sans-serif;color: var(--salt-black);}
         font-size: 2.2rem;}
 }
 
+
+/* ========================================
+   MENU SALT — DESIGN GASTRONÓMICO
+======================================== */
+
+.menu-section {
+    padding: 100px 0;
+    background: #f7f6f2;
+}
+
+.menu-heading {
+    max-width: 720px;
+    margin: 0 auto 55px;
+}
+
+.menu-heading .section-subtitle {
+    color: #a88649;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.menu-heading h2 {
+    margin: 20px 0 15px;
+    color: var(--salt-black);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.3rem, 4vw, 3.4rem);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.menu-heading h2 span {
+    color: #a88649;
+    font-style: italic;
+}
+
+.menu-heading > p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.menu-heading-line {
+    width: 48px;
+    height: 2px;
+    margin: 25px auto 0;
+    background: var(--salt-gold);
+}
+
+/* Cartões */
+
+.dish-card {
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e9e5dc;
+    border-radius: 3px;
+    box-shadow: 0 5px 22px rgba(0, 0, 0, 0.025);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.dish-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.09);
+}
+
+.dish-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 260px;
+    background: #e8e5de;
+}
+
+.dish-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.dish-card:hover .dish-image {
+    transform: scale(1.05);
+}
+
+.dish-category {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    padding: 8px 11px;
+    color: #fff;
+    background: rgba(17, 17, 17, 0.88);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.dish-number {
+    position: absolute;
+    right: 18px;
+    bottom: 15px;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+}
+
+.dish-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 255px;
+    padding: 25px 23px 20px;
+}
+
+.dish-title-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.dish-title-row h3 {
+    margin: 0;
+    color: var(--salt-black);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.dish-price {
+    flex-shrink: 0;
+    padding-top: 4px;
+    color: #a88649;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.dish-description {
+    margin: 0 0 22px;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.dish-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 17px;
+    margin-top: auto;
+    padding-top: 18px;
+    border-top: 1px solid #eeeae2;
+}
+
+.dish-note {
+    color: #8b7b5b;
+    font-size: 11px;
+    letter-spacing: 0.3px;
+}
+
+.dish-note i {
+    margin-right: 6px;
+    color: #a88649;
+}
+
+.btn-dish-reserve {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 12px 15px;
+    color: #fff;
+    background: var(--salt-dark);
+    border: 1px solid var(--salt-dark);
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: background 0.25s ease,
+                border-color 0.25s ease;
+}
+
+.btn-dish-reserve:hover,
+.btn-dish-reserve:focus {
+    color: #fff;
+    background: #a88649;
+    border-color: #a88649;
+}
+
+.menu-disclaimer {
+    margin: 35px 0 0;
+    color: #858585;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+/* ========================================
+   MODAL DE RESERVA
+======================================== */
+
+.reservation-modal {
+    color: #fff;
+    background: #181818;
+    border: 1px solid rgba(201, 164, 92, 0.45);
+    border-radius: 4px;
+}
+
+.reservation-modal .modal-header {
+    align-items: flex-start;
+    padding: 28px 30px 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.reservation-eyebrow {
+    color: var(--salt-gold-light);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.reservation-modal .modal-title {
+    margin-top: 10px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.6rem, 4vw, 2.1rem);
+    font-weight: 400;
+}
+
+.reservation-modal .modal-body {
+    padding: 25px 30px 30px;
+}
+
+.reservation-intro {
+    margin-bottom: 25px;
+    color: #c3c3c3;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.reservation-modal .form-label {
+    margin-bottom: 8px;
+    color: #e6e0d5;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.reservation-modal .form-control,
+.reservation-modal .form-select {
+    min-height: 45px;
+    color: #fff;
+    background-color: #242424;
+    border: 1px solid #454545;
+    border-radius: 2px;
+    font-size: 13px;
+}
+
+.reservation-modal textarea.form-control {
+    min-height: auto;
+}
+
+.reservation-modal .form-control::placeholder {
+    color: #999;
+}
+
+.reservation-modal .form-control:focus,
+.reservation-modal .form-select:focus {
+    border-color: var(--salt-gold);
+    box-shadow: 0 0 0 0.15rem rgba(201, 164, 92, 0.15);
+}
+
+.reservation-modal .form-control[readonly] {
+    color: var(--salt-gold-light);
+    background-color: #202020;
+    font-weight: 600;
+}
+
+.reservation-modal .form-select option {
+    color: #fff;
+    background: #242424;
+}
+
+.reservation-price {
+    display: block;
+    margin-top: 7px;
+    color: var(--salt-gold-light);
+    font-size: 12px;
+}
+
+.reservation-notice {
+    margin: 5px 0;
+    color: #c5bda9;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.btn-reservation-submit {
+    min-height: 48px;
+    padding: 13px 18px;
+    color: #171717;
+    background: var(--salt-gold);
+    border: 1px solid var(--salt-gold);
+    border-radius: 2px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: background 0.25s ease;
+}
+
+.btn-reservation-submit:hover {
+    color: #171717;
+    background: var(--salt-gold-light);
+    border-color: var(--salt-gold-light);
+}
+
+/* Responsividade */
+
+@media (max-width: 575.98px) {
+    .menu-section {
+        padding: 65px 0;
+    }
+
+    .menu-heading {
+        margin-bottom: 35px;
+    }
+
+    .dish-image-wrapper {
+        height: 235px;
+    }
+
+    .dish-content {
+        min-height: auto;
+        padding: 22px 18px 18px;
+    }
+
+    .dish-title-row h3 {
+        font-size: 21px;
+    }
+
+    .reservation-modal .modal-header {
+        padding: 22px 20px 18px;
+    }
+
+    .reservation-modal .modal-body {
+        padding: 22px 20px;
+    }
+}
+
+
+
+/* ========================================
+   POPUP DE CONFIRMAÇÃO DE RESERVA
+======================================== */
+
+.confirmation-modal {
+    background-color: #181818;
+    color: #fff;
+    border: 1px solid rgba(201, 164, 92, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.confirmation-icon {
+    width: 76px;
+    height: 76px;
+    margin: 0 auto 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--salt-gold);
+    border-radius: 50%;
+    background-color: rgba(201, 164, 92, 0.12);
+    color: var(--salt-gold-light);
+    font-size: 36px;
+}
+
+.confirmation-eyebrow {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--salt-gold-light);
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.confirmation-modal h2 {
+    margin-bottom: 14px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(25px, 4vw, 32px);
+    line-height: 1.25;
+}
+
+.confirmation-description {
+    margin-bottom: 25px;
+    color: #c7c7c7;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.confirmation-summary {
+    display: grid;
+    gap: 0;
+    margin-bottom: 20px;
+    padding: 5px 17px;
+    border: 1px solid #383838;
+    border-radius: 3px;
+}
+
+.confirmation-summary > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 13px 0;
+    border-bottom: 1px solid #383838;
+}
+
+.confirmation-summary > div:last-child {
+    border-bottom: none;
+}
+
+.confirmation-summary span {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.confirmation-summary strong {
+    color: var(--salt-gold-light);
+    font-size: 12px;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.confirmation-note {
+    margin-bottom: 22px;
+    color: #d4c39f;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.btn-confirmation-close {
+    padding: 13px 18px;
+    border: 1px solid var(--salt-gold);
+    border-radius: 3px;
+    background-color: var(--salt-gold);
+    color: #171717;
+    font-weight: 600;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+.btn-confirmation-close:hover {
+    border-color: var(--salt-gold-light);
+    background-color: var(--salt-gold-light);
+    color: #171717;
+}
+
+@media (max-width: 575.98px) {
+    .confirmation-summary {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .confirmation-summary > div {
+        gap: 10px;
+    }
+}

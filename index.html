@@ -327,52 +327,544 @@
 
 </section>
 
-    <section id="menu" class="menu-section py-5">
-        <div class="container py-5">
-            <div class="text-center mb-5">
-                <span class="section-subtitle">SABORES</span>
-                <h2>Destaques do nosso menu</h2>
-                <p class="text-muted">Uma seleção de pratos para começar a experiência SALT.</p>
+    
+<section id="menu" class="menu-section">
+
+    <div class="container">
+
+        <!-- Cabeçalho do menu -->
+        <div class="menu-heading text-center">
+
+            <span class="section-subtitle">
+                A NOSSA GASTRONOMIA
+            </span>
+
+            <h2>
+                Destaques do nosso <span>menu.</span>
+            </h2>
+
+            <p>
+                Descubra os nossos pratos e escolha a sua próxima
+                experiência gastronómica no SALT.
+            </p>
+
+            <div class="menu-heading-line"></div>
+
+        </div>
+
+        <!-- Cartões dos pratos -->
+        <div class="row g-4">
+
+            <!-- Prato 1 -->
+            <div class="col-md-6 col-lg-4">
+
+                <article class="dish-card h-100">
+
+                    <div class="dish-image-wrapper">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=85"
+                            alt="Seleção gastronómica de inspiração marítima"
+                            class="dish-image"
+                            loading="lazy"
+                        >
+
+                        <span class="dish-category">
+                            DO MAR
+                        </span>
+
+                        <span class="dish-number">
+                            01
+                        </span>
+
+                    </div>
+
+                    <div class="dish-content">
+
+                        <div class="dish-title-row">
+                            <h3>Seafood Selection</h3>
+                            <span class="dish-price">1.200 MT</span>
+                        </div>
+
+                        <p class="dish-description">
+                            Uma seleção de sabores inspirados no mar,
+                            ideal para quem aprecia uma experiência
+                            gastronómica de inspiração marítima.
+                        </p>
+
+                        <div class="dish-footer">
+
+                            <span class="dish-note">
+                                <i class="bi bi-stars"></i>
+                                Seleção especial
+                            </span>
+
+                            <button
+                                type="button"
+                                class="btn btn-dish-reserve"
+                                data-bs-toggle="modal"
+                                data-bs-target="#reservaModal"
+                                data-prato="Seafood Selection"
+                                data-preco="1.200 MT"
+                            >
+                                Reservar prato
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
             </div>
 
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card dish-card h-100">
-                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Prato de restaurante">
-                        <div class="card-body">
-                            <h5 class="card-title">Seafood Selection</h5>
-                            <p class="card-text">Uma seleção de sabores inspirados no mar.</p>
-                            <span class="price"> 1.200 MT</span>
+            <!-- Prato 2 -->
+            <div class="col-md-6 col-lg-4">
+
+                <article class="dish-card h-100">
+
+                    <div class="dish-image-wrapper">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85"
+                            alt="Carne grelhada servida com acompanhamentos"
+                            class="dish-image"
+                            loading="lazy"
+                        >
+
+                        <span class="dish-category">
+                            DA GRELHA
+                        </span>
+
+                        <span class="dish-number">
+                            02
+                        </span>
+
+                    </div>
+
+                    <div class="dish-content">
+
+                        <div class="dish-title-row">
+                            <h3>Fire Grill</h3>
+                            <span class="dish-price">1.500 MT</span>
                         </div>
+
+                        <p class="dish-description">
+                            Uma proposta para os apreciadores de carne,
+                            com apresentação inspirada na cozinha
+                            preparada na grelha.
+                        </p>
+
+                        <div class="dish-footer">
+
+                            <span class="dish-note">
+                                <i class="bi bi-fire"></i>
+                                Inspiração na grelha
+                            </span>
+
+                            <button
+                                type="button"
+                                class="btn btn-dish-reserve"
+                                data-bs-toggle="modal"
+                                data-bs-target="#reservaModal"
+                                data-prato="Fire Grill"
+                                data-preco="1.500 MT"
+                            >
+                                Reservar prato
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- Prato 3 -->
+            <div class="col-md-6 col-lg-4">
+
+                <article class="dish-card h-100">
+
+                    <div class="dish-image-wrapper">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=85"
+                            alt="Prato de massa servido com acompanhamentos"
+                            class="dish-image"
+                            loading="lazy"
+                        >
+
+                        <span class="dish-category">
+                            MASSAS
+                        </span>
+
+                        <span class="dish-number">
+                            03
+                        </span>
+
+                    </div>
+
+                    <div class="dish-content">
+
+                        <div class="dish-title-row">
+                            <h3>Signature Pasta</h3>
+                            <span class="dish-price">950 MT</span>
+                        </div>
+
+                        <p class="dish-description">
+                            Uma proposta de massa para quem procura
+                            uma refeição saborosa numa apresentação
+                            simples e contemporânea.
+                        </p>
+
+                        <div class="dish-footer">
+
+                            <span class="dish-note">
+                                <i class="bi bi-egg-fried"></i>
+                                Inspiração italiana
+                            </span>
+
+                            <button
+                                type="button"
+                                class="btn btn-dish-reserve"
+                                data-bs-toggle="modal"
+                                data-bs-target="#reservaModal"
+                                data-prato="Signature Pasta"
+                                data-preco="950 MT"
+                            >
+                                Reservar prato
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+        <p class="menu-disclaimer text-center">
+            Pratos, descrições e preços apresentados para demonstração.
+            Confirme o menu e os valores oficiais com o restaurante.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- MODAL DE RESERVA -->
+<div
+    class="modal fade"
+    id="reservaModal"
+    tabindex="-1"
+    aria-labelledby="reservaModalLabel"
+    aria-hidden="true"
+>
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+
+        <div class="modal-content reservation-modal">
+
+            <div class="modal-header">
+
+                <div>
+                    <span class="reservation-eyebrow">
+                        SALT · ICE &amp; FIRE
+                    </span>
+
+                    <h2 class="modal-title" id="reservaModalLabel">
+                        Prepare a sua visita
+                    </h2>
+                </div>
+
+                <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="modal"
+                    aria-label="Fechar"
+                ></button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <p class="reservation-intro">
+                    Preencha os dados abaixo para preparar o seu
+                    pedido de reserva. O restaurante deverá confirmar
+                    a disponibilidade da mesa e do prato.
+                </p>
+
+                <form id="reservaForm">
+
+                    <div class="row g-3">
+
+                        <!-- Prato selecionado -->
+                        <div class="col-12">
+
+                            <label for="pratoReserva" class="form-label">
+                                Prato escolhido
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="pratoReserva"
+                                name="prato"
+                                readonly
+                                required
+                            >
+
+                            <small
+                                class="reservation-price"
+                                id="precoReserva"
+                            ></small>
+
+                        </div>
+
+                        <!-- Nome -->
+                        <div class="col-md-6">
+
+                            <label for="nomeReserva" class="form-label">
+                                Nome completo
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="nomeReserva"
+                                name="nome"
+                                placeholder="O seu nome"
+                                autocomplete="name"
+                                minlength="2"
+                                required
+                            >
+
+                        </div>
+
+                        <!-- Telefone -->
+                        <div class="col-md-6">
+
+                            <label for="telefoneReserva" class="form-label">
+                                Telefone
+                            </label>
+
+                            <input
+                                type="tel"
+                                class="form-control"
+                                id="telefoneReserva"
+                                name="telefone"
+                                placeholder="+258 ..."
+                                autocomplete="tel"
+                                required
+                            >
+
+                        </div>
+
+                        <!-- Data -->
+                        <div class="col-md-6">
+
+                            <label for="dataReserva" class="form-label">
+                                Data pretendida
+                            </label>
+
+                            <input
+                                type="date"
+                                class="form-control"
+                                id="dataReserva"
+                                name="data"
+                                required
+                            >
+
+                        </div>
+
+                        <!-- Hora -->
+                        <div class="col-md-6">
+
+                            <label for="horaReserva" class="form-label">
+                                Hora pretendida
+                            </label>
+
+                            <input
+                                type="time"
+                                class="form-control"
+                                id="horaReserva"
+                                name="hora"
+                                required
+                            >
+
+                        </div>
+
+                        <!-- Pessoas -->
+                        <div class="col-md-6">
+
+                            <label for="pessoasReserva" class="form-label">
+                                Número de pessoas
+                            </label>
+
+                            <select
+                                class="form-select"
+                                id="pessoasReserva"
+                                name="pessoas"
+                                required
+                            >
+                                <option value="1">1 pessoa</option>
+                                <option value="2" selected>2 pessoas</option>
+                                <option value="3">3 pessoas</option>
+                                <option value="4">4 pessoas</option>
+                                <option value="5">5 pessoas</option>
+                                <option value="6">6 pessoas</option>
+                                <option value="7">7 pessoas</option>
+                                <option value="8">8 pessoas</option>
+                                <option value="Mais de 8">Mais de 8 pessoas</option>
+                            </select>
+
+                        </div>
+
+                        <!-- Quantidade do prato -->
+                        <div class="col-md-6">
+
+                            <label for="quantidadePratos" class="form-label">
+                                Quantidade deste prato
+                            </label>
+
+                            <select
+                                class="form-select"
+                                id="quantidadePratos"
+                                name="quantidade"
+                                required
+                            >
+                                <option value="1">1 prato</option>
+                                <option value="2">2 pratos</option>
+                                <option value="3">3 pratos</option>
+                                <option value="4">4 pratos</option>
+                                <option value="5">5 pratos</option>
+                                <option value="6">6 pratos</option>
+                                <option value="7">7 pratos</option>
+                                <option value="8">8 pratos</option>
+                            </select>
+
+                        </div>
+
+                        <!-- Observações -->
+                        <div class="col-12">
+
+                            <label for="observacoesReserva" class="form-label">
+                                Observações (opcional)
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                id="observacoesReserva"
+                                name="observacoes"
+                                rows="3"
+                                placeholder="Alguma preferência ou informação adicional?"
+                            ></textarea>
+
+                        </div>
+
+                        <div class="col-12">
+                            <p class="reservation-notice">
+                                <i class="bi bi-info-circle me-1"></i>
+                                Este pedido não garante uma reserva.
+                                Aguarde a confirmação do restaurante.
+                            </p>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-reservation-submit w-100">
+                                <i class="bi bi-calendar-check me-2"></i>
+                                    Enviar pedido de reserva
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- POPUP DE CONFIRMAÇÃO DO PEDIDO -->
+<div
+    class="modal fade"
+    id="confirmacaoReservaModal"
+    tabindex="-1"
+    aria-labelledby="confirmacaoReservaLabel"
+    aria-hidden="true"
+>
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content confirmation-modal">
+
+            <div class="modal-body text-center p-4 p-md-5">
+
+                <div class="confirmation-icon">
+                    <i class="bi bi-check2"></i>
+                </div>
+
+                <span class="confirmation-eyebrow">
+                    SALT · ICE &amp; FIRE
+                </span>
+
+                <h2 id="confirmacaoReservaLabel">
+                    Pedido de reserva preparado!
+                </h2>
+
+                <p class="confirmation-description">
+                    O seu pedido foi registado nesta demonstração.
+                    Aguarde a confirmação da disponibilidade da mesa
+                    e do prato pelo restaurante.
+                </p>
+
+                <div class="confirmation-summary text-start">
+                    <div>
+                        <span>Prato escolhido</span>
+                        <strong id="confirmacaoPrato"></strong>
+                    </div>
+
+                    <div>
+                        <span>Data pretendida</span>
+                        <strong id="confirmacaoData"></strong>
+                    </div>
+
+                    <div>
+                        <span>Hora pretendida</span>
+                        <strong id="confirmacaoHora"></strong>
+                    </div>
+
+                    <div>
+                        <span>Número de pessoas</span>
+                        <strong id="confirmacaoPessoas"></strong>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card dish-card h-100">
-                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Carne grelhada">
-                        <div class="card-body">
-                            <h5 class="card-title">Fire Grill</h5>
-                            <p class="card-text">Carnes preparadascuidadosamente na grelha. </p>
-                            <span class="price">1.500 MT</span>
-                        </div>
-                    </div>
-                </div>
+                <p class="confirmation-note">
+                    <i class="bi bi-info-circle me-1"></i>
+                    A reserva ainda não está confirmada.
+                </p>
 
-                <div class="col-md-4">
-                    <div class="card dish-card h-100">
-                        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Massa italiana">
-                        <div class="card-body">
-                            <h5 class="card-title">Signature Pasta</h5>
-                            <p class="card-text">Massa preparada com ingredientes selecionados.</p>
-                            <span class="price">950 MT</span>
-                        </div>
+                <button
+                    type="button"
+                    class="btn btn-confirmation-close w-100"
+                    data-bs-dismiss="modal"
+                >
+                    Compreendi
+                    <i class="bi bi-arrow-right ms-2"></i>
+                </button>
 
-                    </div>
-                </div>
             </div>
         </div>
-    </section>
-    
+    </div>
+</div>
+
+ 
 <section id="contacto" class="contact-section">
     <div class="container">
         <!-- Cabeçalho da secção -->
