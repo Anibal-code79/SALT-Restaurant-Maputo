@@ -1274,3 +1274,206 @@ body {font-family: Arial, Helvetica, sans-serif;color: var(--salt-black);}
         gap: 10px;
     }
 }
+
+/* ========================================
+   REFINAMENTO VISUAL DO MENU SALT
+======================================== */
+
+.menu-section {
+    padding: 100px 0;
+    background-color: #f7f5f0;
+}
+
+/* Cartão gastronómico */
+.dish-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #ffffff;
+    border: 1px solid #e9e4da;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.035);
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.dish-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(201, 164, 92, 0.55);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.09);
+}
+
+/* Imagens */
+.dish-image-wrapper {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    background-color: #e5e0d8;
+}
+
+.dish-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.65s ease;
+}
+
+.dish-card:hover .dish-image {
+    transform: scale(1.06);
+}
+
+/* Categoria */
+.dish-category {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    padding: 8px 12px;
+    background-color: rgba(17, 17, 17, 0.88);
+    color: var(--salt-gold-light);
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+/* Número do prato */
+.dish-number {
+    position: absolute;
+    right: 18px;
+    bottom: 15px;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: 500;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Conteúdo */
+.dish-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 25px 22px 20px;
+}
+
+.dish-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 13px;
+}
+
+.dish-title-row h3 {
+    margin: 0;
+    color: var(--salt-black);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.dish-price {
+    color: #a88649;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.dish-description {
+    margin-bottom: 22px;
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Rodapé do cartão */
+.dish-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+    margin-top: auto;
+    padding-top: 18px;
+    border-top: 1px solid #eee9df;
+}
+
+.dish-note {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #777777;
+    font-size: 12px;
+}
+
+.dish-note i {
+    color: var(--salt-gold);
+    font-size: 16px;
+}
+
+/* Botão de reserva */
+.btn-dish-reserve {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 14px 17px;
+    border: 1px solid var(--salt-black);
+    border-radius: 3px;
+    background-color: var(--salt-black);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.btn-dish-reserve i {
+    color: var(--salt-gold-light);
+    font-size: 15px;
+    transition: transform 0.3s ease;
+}
+
+.btn-dish-reserve:hover {
+    background-color: var(--salt-gold);
+    border-color: var(--salt-gold);
+    color: #111111;
+}
+
+.btn-dish-reserve:hover i {
+    color: #111111;
+    transform: translate(3px, -3px);
+}
+
+/* Responsividade */
+@media (max-width: 991.98px) {
+    .dish-image-wrapper {
+        height: 230px;
+    }
+
+    .dish-content {
+        padding: 22px 18px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .menu-section {
+        padding: 65px 0;
+    }
+
+    .dish-image-wrapper {
+        height: 250px;
+    }
+
+    .dish-title-row h3 {
+        font-size: 20px;
+    }
+
+    .dish-description {
+        font-size: 14px;
+    }
+}
