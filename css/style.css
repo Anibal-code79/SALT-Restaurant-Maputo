@@ -1519,21 +1519,39 @@ body {font-family: Arial, Helvetica, sans-serif;color: var(--salt-black);}
     margin-bottom: 65px;
 }
 
+
+/* ========================================
+   CONTACTO - DARK GLASS DESIGN
+======================================== */
+
 .contact-item {
     height: 100%;
     padding: 38px 25px;
     text-align: center;
-    background-color: #fff;
-    border: 1px solid #e8e2d8;
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease,
-                border-color 0.3s ease;
+
+    background: rgba(20, 20, 20, 0.72);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(201, 164, 92, 0.20);
+    border-radius: 4px;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
 }
 
 .contact-item:hover {
-    transform: translateY(-5px);
-    border-color: #c9a45c;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    transform: translateY(-6px);
+
+    background: rgba(30, 27, 22, 0.88);
+    border-color: rgba(201, 164, 92, 0.55);
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.25),
+        0 0 18px rgba(201, 164, 92, 0.06);
 }
 
 /* Ícones */
@@ -1541,37 +1559,48 @@ body {font-family: Arial, Helvetica, sans-serif;color: var(--salt-black);}
     display: flex;
     align-items: center;
     justify-content: center;
+
     width: 55px;
     height: 55px;
     margin: 0 auto 20px;
-    background-color: #f7f3e9;
-    color: #b18b48;
+
+    background: rgba(201, 164, 92, 0.10);
+    border: 1px solid rgba(201, 164, 92, 0.18);
+
+    color: var(--salt-gold-light);
     font-size: 23px;
 }
 
 /* Títulos */
 .contact-item h3 {
     margin-bottom: 15px;
+    color: #ffffff;
     font-size: 17px;
     font-weight: 600;
 }
 
-/* Informações */
+/* Descrições */
 .contact-item p {
     margin: 0;
-    color: #777;
+    color: rgba(255, 255, 255, 0.70);
     font-size: 13px;
     line-height: 1.8;
 }
 
+/* Links */
 .contact-item a {
-    color: #777;
+    color: rgba(255, 255, 255, 0.70);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .contact-item a:hover {
-    color: #b18b48;
+    color: var(--salt-gold-light);
+}
+.contact-item:hover {
+    transform: translateY(-5px);
+    border-color: #c9a45c;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
 }
 
 /* Chamada de reserva */
@@ -1624,4 +1653,136 @@ body {font-family: Arial, Helvetica, sans-serif;color: var(--salt-black);}
     .contact-cta {
         padding: 55px 22px;
     }
+}
+
+
+/* Fundo cinematográfico da secção Contacto */
+
+.contact-section {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+/* Vídeo */
+.contact-video-background {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.contact-video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Overlay escuro */
+.contact-video-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(10, 10, 10, 0.82),
+            rgba(10, 10, 10, 0.72)
+        );
+}
+
+/* Cartões com transparência */
+.contact-item {
+    background-color: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(8px);
+}
+
+/* Cabeçalho */
+.contact-heading h2 {
+    color: #ffffff;
+}
+
+.contact-intro {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+/* CTA */
+.contact-cta {
+    background-color: rgba(10, 10, 10, 0.72);
+    border: 1px solid rgba(201, 164, 92, 0.25);
+}
+
+/* Movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+    .contact-video-background {
+        display: none;
+    }
+}
+
+.contact-item {
+    animation: contactReveal 0.8s ease both;
+}
+
+.contact-item:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.contact-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+@keyframes contactReveal {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-item {
+        animation: none;
+    }
+}
+
+/* COR DEFINITIVA DOS CARTÕES DE CONTACTO */
+
+#contacto .contact-details .contact-item {
+    background-color: rgba(20, 20, 20, 0.82) !important;
+    background-image: none !important;
+
+    border: 1px solid rgba(201, 164, 92, 0.25);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Hover */
+#contacto .contact-details .contact-item:hover {
+    background-color: rgba(30, 27, 22, 0.94) !important;
+    border-color: rgba(201, 164, 92, 0.65);
+}
+
+/* Garantir cores dos textos */
+#contacto .contact-details .contact-item h3 {
+    color: #ffffff !important;
+}
+
+#contacto .contact-details .contact-item p,
+#contacto .contact-details .contact-item a {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Ícones */
+#contacto .contact-details .contact-icon {
+    background-color: rgba(201, 164, 92, 0.12) !important;
+    color: #dfc17d !important;
+    border: 1px solid rgba(201, 164, 92, 0.20);
 }
